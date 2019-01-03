@@ -3,10 +3,21 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { Box, Grommet } from 'grommet';
 import { hpe } from 'grommet-theme-hpe';
+import { deepMerge } from 'grommet/utils';
 import { StaticQuery, graphql } from 'gatsby'
 import Nav from './Nav'
 import Header from './Header'
 import './reset.css'
+
+const theme = deepMerge(hpe, {
+  paragraph: {
+    small: { maxWidth: '100%' },
+    medium: { maxWidth: '100%' },
+    large: { maxWidth: '100%' },
+    xlarge: { maxWidth: '100%' },
+    xxlarge: { maxWidth: '100%' },
+  },
+});
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -30,7 +41,7 @@ const Layout = ({ children }) => (
         >
           <html lang="en" />
         </Helmet>
-        <Grommet theme={hpe} full={true}>
+        <Grommet theme={theme} full={true}>
           <Box full direction="row">
             <Box
               background="brand"
