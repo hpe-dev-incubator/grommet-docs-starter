@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { Box, Grommet } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { hpe } from 'grommet-theme-hpe';
 import { StaticQuery, graphql } from 'gatsby'
 import Nav from './Nav'
 import Header from './Header'
@@ -30,7 +30,7 @@ const Layout = ({ children }) => (
         >
           <html lang="en" />
         </Helmet>
-        <Grommet theme={grommet} full={true}>
+        <Grommet theme={hpe} full={true}>
           <Box full direction="row">
             <Box
               background="brand"

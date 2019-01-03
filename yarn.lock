@@ -5316,6 +5316,10 @@ grommet-styles@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/grommet-styles/-/grommet-styles-0.2.0.tgz#b2eac2b7e2747cb523434d21728ce5234f8ce4f4"
 
+grommet-theme-hpe@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/grommet-theme-hpe/-/grommet-theme-hpe-0.4.0.tgz#55e3c3379e08cf0846883be652ae06dff741644d"
+
 grommet@^2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/grommet/-/grommet-2.2.0.tgz#3a698f57e782c1afd465bdd0e93cfc270715a82f"
